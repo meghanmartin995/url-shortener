@@ -41,7 +41,7 @@ a {
 /* CTA */
 .top-content {
   display: grid;
-  margin: 40px 0 100px 200px;
+  margin: 40px 0 80px 200px;
   grid-gap: 80px;
   grid-template-columns: 600px 900px; }
   .top-content .cta-section {
@@ -69,6 +69,7 @@ a {
   font-weight: bold;
   border: none; }
 
+/* Form */
 .form {
   background-image: url("../images/bg-shorten-desktop.svg");
   background-color: #2b272f;
@@ -91,5 +92,48 @@ a {
     font-size: 16px;
     padding: 4px 0 4px 16px;
     margin-right: 14px; }
+
+/* Mid Section */
+.mid-section {
+  background: #F0F1F6; }
+  .mid-section .statistics-header {
+    text-align: center;
+    margin: 0 auto;
+    padding: 80px 0 60px 0;
+    width: 450px; }
+  .mid-section h2 {
+    font-size: 30px;
+    padding-bottom: 8px; }
+  .mid-section p {
+    color: #9e9aa7;
+    font-size: 15px; }
+  .mid-section .statistics-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin: 0 200px 140px 200px;
+    justify-items: center;
+    height: 500px; }
+    .mid-section .statistics-grid img {
+      background: #2b272f;
+      border-radius: 50%;
+      height: 36px;
+      width: 36px;
+      padding: 10px; }
+    .mid-section .statistics-grid .grid-item {
+      background: white;
+      padding: 10px 40px;
+      width: 250px;
+      height: 230px;
+      border-radius: 6px; }
+      .mid-section .statistics-grid .grid-item h3 {
+        padding-bottom: 12px;
+        font-size: 20px; }
+      .mid-section .statistics-grid .grid-item p {
+        width: 270px; }
+    .mid-section .statistics-grid .records {
+      margin-top: 50px; }
+    .mid-section .statistics-grid .customizable {
+      margin-top: 100px; }
 
 /*# sourceMappingURL=style.css.map */
