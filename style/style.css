@@ -23,7 +23,7 @@ a {
   font-size: 14px; }
   .navigation li {
     display: inline;
-    padding: 0 10px;
+    padding: 0 14px;
     line-height: 0; }
   .navigation .nav-items {
     display: flex;
@@ -33,7 +33,7 @@ a {
   .navigation .sign-up {
     color: white;
     background: #2acfcf;
-    padding: 8px 18px;
+    padding: 8px 20px;
     border-radius: 20px;
     border: none;
     font-weight: bold; }
@@ -41,7 +41,7 @@ a {
 /* CTA */
 .top-content {
   display: grid;
-  margin: 40px 0 40px 190px;
+  margin: 40px 0 100px 200px;
   grid-gap: 80px;
   grid-template-columns: 600px 900px; }
   .top-content .cta-section {
@@ -50,7 +50,7 @@ a {
   .top-content .working-image {
     grid-column: 2;
     height: 450px;
-    width: 750px; }
+    width: 700px; }
   .top-content h1 {
     font-size: 76px;
     line-height: 1.1;
@@ -68,5 +68,28 @@ a {
   border-radius: 20px;
   font-weight: bold;
   border: none; }
+
+.form {
+  background-image: url("../images/bg-shorten-desktop.svg");
+  background-color: #2b272f;
+  background-size: cover;
+  height: 130px;
+  width: 1050px;
+  border-radius: 10px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .form .shorten-btn {
+    border-radius: 6px;
+    padding: 14px 32px; }
+  .form #shorten-input {
+    width: 600px;
+    height: 40px;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+    padding: 4px 0 4px 16px;
+    margin-right: 14px; }
 
 /*# sourceMappingURL=style.css.map */
