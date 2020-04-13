@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
 
-
 $body-font: Poppins, sans-serif;
 
 // Primary
@@ -10,14 +9,62 @@ $dark-violet: #2d2640;
 // Secondary
 $red: #f46262;
 
-
 // Neutral
 $gray: #bfbfbf;
 $grayish-violet: #9e9aa7;
 $very-dark-blue:  #35323e;
 $very-dark-violet: #2b272f;
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-size: 18px;
   font-family: $body-font;
+  width: 100%;
+  margin: 0 auto;
 }
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Navigation */
+
+.navigation {
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+
+  li {
+    display: inline;
+    padding: 0 10px;
+    line-height: 0;
+  }
+
+  .nav-items {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-item a {
+    color: $gray;
+  }
+
+  .sign-up {
+    color: white;
+    background: $cyan;
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+  }
+}
+

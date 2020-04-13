@@ -1,6 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
 body {
   font-size: 18px;
-  font-family: Poppins, sans-serif; }
+  font-family: Poppins, sans-serif;
+  width: 100%;
+  margin: 0 auto; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+/* Navigation */
+.navigation {
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px; }
+  .navigation li {
+    display: inline;
+    padding: 0 10px;
+    line-height: 0; }
+  .navigation .nav-items {
+    display: flex;
+    align-items: center; }
+  .navigation .nav-item a {
+    color: #bfbfbf; }
+  .navigation .sign-up {
+    color: white;
+    background: #2acfcf;
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: none;
+    font-weight: bold; }
 
 /*# sourceMappingURL=style.css.map */
