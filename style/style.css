@@ -29,14 +29,23 @@ a {
     display: flex;
     align-items: center; }
   .navigation .nav-item a {
-    color: #9e9aa7; }
+    color: #9e9aa7;
+    transition: .3s all; }
+  .navigation .nav-item a:hover {
+    color: black; }
+  .navigation .nav-item a:active {
+    color: black; }
   .navigation .sign-up {
     color: white;
     background: #2acfcf;
-    padding: 8px 20px;
+    padding: 10px 20px;
     border-radius: 20px;
     border: none;
-    font-weight: bold; }
+    font-weight: bold;
+    transition: .3s all; }
+  .navigation .sign-up:hover {
+    background: #88E5E4;
+    cursor: pointer; }
 
 /* CTA */
 .top-content {
@@ -67,7 +76,12 @@ a {
   font-size: 15px;
   border-radius: 20px;
   font-weight: bold;
-  border: none; }
+  border: none;
+  transition: .3s all; }
+
+.main-button:hover {
+  background: #88E5E4;
+  cursor: pointer; }
 
 /* Form */
 .form {
@@ -142,7 +156,7 @@ a {
   padding: 60px 0;
   background: url("../images/bg-boost-desktop.svg");
   background-size: cover;
-  background-color: #2b272f;
+  background-color: #2d2640;
   color: white; }
   .bottom-section h2 {
     padding-bottom: 20px; }
@@ -150,8 +164,8 @@ a {
 /* Footer */
 footer {
   height: 300px;
-  background: #35323e;
-  color: #bfbfbf;
+  background: #241F27;
+  color: white;
   display: grid;
   grid-template-columns: 230px 230px 230px 230px 230px 230px; }
   footer ul {
@@ -161,8 +175,11 @@ footer {
     color: white; }
   footer li {
     padding-bottom: 10px; }
-  footer span {
-    color: white; }
+  footer a {
+    color: #bfbfbf;
+    transition: .3s all; }
+  footer a:hover {
+    color: #2acfcf; }
   footer .features {
     grid-column: 3; }
   footer .resources {
@@ -171,8 +188,7 @@ footer {
     grid-column: 5; }
   footer .social-icons {
     grid-column: 6;
-    display: flex;
-    color: white; }
+    display: flex; }
     footer .social-icons li {
       margin-right: 22px; }
 

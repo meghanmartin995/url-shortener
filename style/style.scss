@@ -56,15 +56,30 @@ a {
 
   .nav-item a {
     color: $grayish-violet;
+    transition: .3s all;
+  }
+
+  .nav-item a:hover {
+    color: black;
+  }
+
+  .nav-item a:active {
+    color: black;
   }
 
   .sign-up {
     color: white;
     background: $cyan;
-    padding: 8px 20px;
+    padding: 10px 20px;
     border-radius: 20px;
     border: none;
     font-weight: bold;
+    transition: .3s all;
+  }
+
+  .sign-up:hover {
+    background: #88E5E4;
+    cursor: pointer;
   }
 }
 
@@ -105,6 +120,12 @@ a {
   border-radius: 20px;
   font-weight: bold;
   border: none;
+  transition: .3s all;
+}
+
+.main-button:hover {
+  background: #88E5E4;
+  cursor: pointer;
 }
 
 /* Form */
@@ -198,12 +219,13 @@ a {
 }
 
 /* Bottom Section */
+
 .bottom-section {
   text-align: center;
   padding: 60px 0;
   background: url("../images/bg-boost-desktop.svg");
   background-size: cover;
-  background-color: $very-dark-violet;
+  background-color: $dark-violet;
   color: white;
     h2 {
       padding-bottom: 20px;
@@ -214,8 +236,8 @@ a {
 
 footer {
   height: 300px;
-  background: $very-dark-blue;
-  color: $gray;
+  background: #241F27;
+  color: white;
   display: grid;
   grid-template-columns: 230px 230px 230px 230px 230px 230px;
   ul {
@@ -228,8 +250,12 @@ footer {
   li {
     padding-bottom: 10px;
   }
-  span {
-    color: white;
+  a {
+    color: $gray;
+    transition: .3s all;
+  }
+  a:hover {
+    color: $cyan;
   }
   .features {
     grid-column: 3;
@@ -243,7 +269,6 @@ footer {
   .social-icons {
     grid-column: 6;
     display: flex;
-    color: white;
     li {
       margin-right: 22px;
     }
