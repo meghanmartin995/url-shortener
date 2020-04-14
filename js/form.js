@@ -9,8 +9,8 @@ const shortenUrl = (link) => {
    })
     .then(response => response.json())
     .then((data) => {
-      console.log(data);
-      const result = `<p>https://rel.ink/${data.hashid}</p>`;
+    // console.log(data);
+      const result = `<a href="https://rel.ink/${data.hashid}">https://rel.ink/${data.hashid}</a>`;
         results.insertAdjacentHTML("beforeend", result);
     });
 };

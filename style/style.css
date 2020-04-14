@@ -107,6 +107,13 @@ a {
     padding: 4px 0 4px 16px;
     margin-right: 14px; }
 
+.results {
+  background: white;
+  padding: 50px;
+  text-align: center; }
+  .results a {
+    color: #2b272f; }
+
 /* Mid Section */
 .mid-section {
   background: #F0F1F6; }
