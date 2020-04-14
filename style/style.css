@@ -148,5 +148,32 @@ a {
     padding-bottom: 20px; }
 
 /* Footer */
+footer {
+  height: 300px;
+  background: #35323e;
+  color: #bfbfbf;
+  display: grid;
+  grid-template-columns: 230px 230px 230px 230px 230px 230px; }
+  footer ul {
+    margin-top: 60px; }
+  footer .footer-logo {
+    grid-column: 1;
+    color: white; }
+  footer li {
+    padding-bottom: 10px; }
+  footer span {
+    color: white; }
+  footer .features {
+    grid-column: 3; }
+  footer .resources {
+    grid-column: 4; }
+  footer .company {
+    grid-column: 5; }
+  footer .social-icons {
+    grid-column: 6;
+    display: flex;
+    color: white; }
+    footer .social-icons li {
+      margin-right: 22px; }
 
 /*# sourceMappingURL=style.css.map */

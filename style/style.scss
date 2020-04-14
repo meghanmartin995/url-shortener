@@ -211,3 +211,42 @@ a {
 }
 
 /* Footer */
+
+footer {
+  height: 300px;
+  background: $very-dark-blue;
+  color: $gray;
+  display: grid;
+  grid-template-columns: 230px 230px 230px 230px 230px 230px;
+  ul {
+    margin-top: 60px;
+  }
+  .footer-logo {
+    grid-column: 1;
+    color: white;
+  }
+  li {
+    padding-bottom: 10px;
+  }
+  span {
+    color: white;
+  }
+  .features {
+    grid-column: 3;
+  }
+  .resources {
+    grid-column: 4;
+  }
+  .company {
+    grid-column: 5;
+  }
+  .social-icons {
+    grid-column: 6;
+    display: flex;
+    color: white;
+    li {
+      margin-right: 22px;
+    }
+  }
+}
+
