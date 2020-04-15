@@ -3,6 +3,10 @@ const results = document.querySelector('.results')
 const error = document.querySelector('.error')
 const input = document.querySelector('#shorten-input')
 
+let itemsArray = localStorage.getItem('items') ? JSON.parse(localStorage.getItem('items')) : []
+localStorage.setItem('items', JSON.stringify(itemsArray))
+const data = JSON.parse(localStorage.getItem('items'))
+
 
 // Fetch short URL from API
 
@@ -35,11 +39,12 @@ form.addEventListener("submit", (event) => {
     shortenUrl(input.value);
     input.classList.remove("red-border");
     error.innerText = '';
+    itemsArray.push(input.value)
+    localStorage.setItem('items', JSON.stringify(itemsArray))
   }
   else {
     error.innerText = '';
     error.innerText = 'Please add a link';
-    console.log(input)
     input.classList.add("red-border");
   }
 });
@@ -70,4 +75,10 @@ results.addEventListener('mouseover', () => {
   })
 });
 
+
+// Persists in LocalStorage
+
+data.forEach(item => {
+  shortenUrl(item)
+})
 
