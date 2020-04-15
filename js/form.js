@@ -33,6 +33,8 @@ form.addEventListener("submit", (event) => {
   const input = event.currentTarget.querySelector('#shorten-input');
   if (input.value) {
     shortenUrl(input.value);
+    input.classList.remove("red-border");
+    error.innerText = '';
   }
   else {
     error.innerText = '';
