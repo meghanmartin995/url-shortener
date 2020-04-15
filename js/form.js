@@ -10,7 +10,11 @@ const shortenUrl = (link) => {
     .then(response => response.json())
     .then((data) => {
     // console.log(data);
-      const result = `<a href="https://rel.ink/${data.hashid}">https://rel.ink/${data.hashid}</a>`;
+      const result = `
+      <div class="result">
+        <p>${link}</p>
+        <a href="https://rel.ink/${data.hashid}">https://rel.ink/${data.hashid}</a>
+      </div>`;
         results.insertAdjacentHTML("beforeend", result);
     });
 };
@@ -18,7 +22,6 @@ const shortenUrl = (link) => {
 form.addEventListener("submit", (event) => {
   event.preventDefault();
   const input = event.currentTarget.querySelector('#shorten-input');
-  results.innerHTML = '';
   shortenUrl(input.value);
 });
 

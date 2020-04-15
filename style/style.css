@@ -107,12 +107,14 @@ a {
     padding: 4px 0 4px 16px;
     margin-right: 14px; }
 
-.results {
+/* Results */
+.results a {
+  color: #2acfcf; }
+.results p {
+  color: #2b272f; }
+.results .result {
   background: white;
-  padding: 50px;
-  text-align: center; }
-  .results a {
-    color: #2b272f; }
+  height: 40px; }
 
 /* Mid Section */
 .mid-section {

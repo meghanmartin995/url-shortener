@@ -156,12 +156,18 @@ a {
   }
 }
 
+/* Results */
+
 .results {
-  background: white;
-  padding: 50px;
-  text-align: center;
   a {
+    color: $cyan;
+  }
+  p {
     color: $very-dark-violet;
+  }
+  .result {
+    background: white;
+    height: 40px;
   }
 }
 
