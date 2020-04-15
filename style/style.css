@@ -108,13 +108,21 @@ a {
     margin-right: 14px; }
 
 /* Results */
-.results a {
-  color: #2acfcf; }
-.results p {
-  color: #2b272f; }
 .results .result {
   background: white;
-  height: 40px; }
+  height: 56px;
+  width: 990px;
+  border-radius: 6px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  justify-content: space-between;
+  margin-top: 22px; }
+  .results .result a {
+    color: #2acfcf; }
+  .results .result p {
+    color: #2b272f; }
 
 /* Mid Section */
 .mid-section {
