@@ -58,7 +58,7 @@ const copyToClipboard = str => {
   document.body.removeChild(el);
 };
 
-button.addEventListener('click', (event) => {
+button.addEventListener('mouseover', () => {
   const link = document.querySelector('#link').innerText;
   copyToClipboard(link);
   const copyButton = document.querySelectorAll(".square-btn")
