@@ -135,20 +135,23 @@ a {
   background-image: url("../images/bg-shorten-desktop.svg");
   background-color: $very-dark-violet;
   background-size: cover;
-  height: 130px;
   width: 1050px;
   border-radius: 10px;
+  padding: 40px 0;
+  text-align: center;
   margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   .shorten-btn {
     border-radius: 6px;
     padding: 14px 32px;
   }
 
-  span {
+  p {
     color: #CB567A;
+    padding-top: 8px;
+    text-align: left;
+    font-size: 14px;
+    padding-left: 140px;
+    font-style: italic;
   }
 
   .red-border {

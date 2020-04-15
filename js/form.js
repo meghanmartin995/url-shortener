@@ -1,6 +1,7 @@
 const form = document.querySelector('#url-form')
 const results = document.querySelector('.results')
 const button = document.querySelector('.button')
+const formSection = document.querySelector('.form')
 
 
 const shortenUrl = (link) => {
@@ -31,8 +32,7 @@ form.addEventListener("submit", (event) => {
     shortenUrl(input.value);
   }
   else {
-    console.log(event.currentTarget)
-    event.currentTarget.insertAdjacentHTML("afterend", `<span>Please add a link<span>`);
+    formSection.insertAdjacentHTML("beforeend", `<p>Please add a link</p>`);
     event.currentTarget.classList.add = "red-border"
   }
 });
