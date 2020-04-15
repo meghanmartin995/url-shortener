@@ -2,6 +2,7 @@ const form = document.querySelector('#url-form')
 const results = document.querySelector('.results')
 const button = document.querySelector('.button')
 const error = document.querySelector('.error')
+const input = document.querySelector('#shorten-input')
 
 
 const shortenUrl = (link) => {
@@ -34,8 +35,8 @@ form.addEventListener("submit", (event) => {
   else {
     error.innerText = '';
     error.innerText = 'Please add a link';
-    console.log(error.innerText)
-    event.currentTarget.classList.add = "red-border"
+    console.log(input)
+    input.classList.add("red-border");
   }
 });
 
@@ -55,7 +56,9 @@ const addListener = () => {
   button.addEventListener("click", (event) => {
     const link = document.querySelector('#link').innerText;
     copyToClipboard(link);
-    event.currentTarget.innerHTML = `<button class="square-btn purple-btn sign-up" type="button">Copied!</button>`;
+    const copyButton = document.querySelector(".square-btn")
+    copyButton.innerText = `Copied!`;
+    copyButton.classList.add("purple-btn")
   });
 };
 
