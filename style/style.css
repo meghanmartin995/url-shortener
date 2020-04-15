@@ -121,13 +121,21 @@ a {
   align-items: center;
   padding: 0 30px;
   justify-content: space-between;
-  margin-top: 22px; }
+  margin-top: 18px; }
   .results .result a {
     color: #2acfcf; }
   .results .result p {
     color: #2b272f; }
-  .results .result .square-btn {
-    border-radius: 6px; }
+
+.square-btn {
+  border-radius: 6px; }
+
+.purple-btn {
+  background: #2b272f; }
+
+.purple-btn:hover {
+  background: #2b272f;
+  opacity: .7; }
 
 /* Mid Section */
 .mid-section {

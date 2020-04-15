@@ -170,18 +170,31 @@ a {
     align-items: center;
     padding: 0 30px;
     justify-content: space-between;
-    margin-top: 22px;
+    margin-top: 18px;
     a {
       color: $cyan;
     }
       p {
     color: $very-dark-violet;
     }
-    .square-btn {
-      border-radius: 6px;
-    }
   }
 }
+
+.square-btn {
+  border-radius: 6px;
+}
+
+.purple-btn {
+  background: $very-dark-violet;
+}
+.purple-btn:hover {
+  background: $very-dark-violet;
+  opacity: .7;
+}
+
+
+
+
 
 /* Mid Section */
 
