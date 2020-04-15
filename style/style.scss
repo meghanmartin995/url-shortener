@@ -145,7 +145,6 @@ a {
     border-radius: 6px;
     padding: 14px 32px;
   }
-
   p {
     color: #CB567A;
     padding-top: 6px;
@@ -154,7 +153,6 @@ a {
     padding-left: 140px;
     font-style: italic;
   }
-
   .red-border {
     border: 2.5px solid #CB567A;
   }
@@ -207,24 +205,20 @@ a {
 
 .mid-section {
   background: #F0F1F6;
-
   .statistics-header {
     text-align: center;
     margin: 0 auto;
     padding: 80px 0 60px 0;
     width: 450px;
   }
-
   h2 {
     font-size: 30px;
     padding-bottom: 8px;
   }
-
   p {
     color: $grayish-violet;
     font-size: 15px;
   }
-
   .statistics-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -232,7 +226,6 @@ a {
     margin: 0 200px 0 200px;
     justify-items: center;
     height: 500px;
-
     img {
       background: $very-dark-violet;
       border-radius: 50%;
@@ -240,7 +233,6 @@ a {
       width: 36px;
       padding: 10px;
     }
-
     .grid-item {
       background: white;
       padding: 10px 40px;

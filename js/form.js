@@ -1,6 +1,5 @@
 const form = document.querySelector('#url-form')
 const results = document.querySelector('.results')
-const button = document.querySelector('.button')
 const error = document.querySelector('.error')
 const input = document.querySelector('#shorten-input')
 
@@ -21,10 +20,9 @@ const shortenUrl = (link) => {
         <div class="result">
           <p>${link}</p>
           <a id="link" href="https://rel.ink/${data.hashid}">https://rel.ink/${data.hashid}</a>
+          <button class="square-btn sign-up" type="button">Copy</button>
         </div>`;
       results.insertAdjacentHTML("afterbegin", result);
-      const copyButton = `<button class="square-btn sign-up" type="button">Copy</button>`
-      button.insertAdjacentHTML("beforeend", copyButton);
     });
 };
 
@@ -58,12 +56,12 @@ const copyToClipboard = str => {
   document.body.removeChild(el);
 };
 
-button.addEventListener('mouseover', () => {
-  const link = document.querySelector('#link').innerText;
-  copyToClipboard(link);
+results.addEventListener('mouseover', () => {
   const copyButton = document.querySelectorAll(".square-btn")
   copyButton.forEach((button) => {
     button.addEventListener('click', (event) => {
+    const link = document.querySelector('#link').innerText;
+    copyToClipboard(link);
     event.currentTarget.innerText = `Copied!`;
     event.currentTarget.classList.add("purple-btn")
   });
