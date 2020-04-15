@@ -146,6 +146,14 @@ a {
     border-radius: 6px;
     padding: 14px 32px;
   }
+
+  span {
+    color: #CB567A;
+  }
+
+  .red-border {
+    border: 1px solid #CB567A;
+  }
   #shorten-input {
     width: 600px;
     height: 40px;
@@ -174,8 +182,8 @@ a {
     a {
       color: $cyan;
     }
-      p {
-    color: $very-dark-violet;
+    p {
+      color: $very-dark-violet;
     }
   }
 }
@@ -191,10 +199,6 @@ a {
   background: $very-dark-violet;
   opacity: .7;
 }
-
-
-
-
 
 /* Mid Section */
 

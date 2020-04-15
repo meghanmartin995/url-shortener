@@ -27,7 +27,14 @@ const shortenUrl = (link) => {
 form.addEventListener("submit", (event) => {
   event.preventDefault();
   const input = event.currentTarget.querySelector('#shorten-input');
-  shortenUrl(input.value);
+  if (input.value) {
+    shortenUrl(input.value);
+  }
+  else {
+    console.log(event.currentTarget)
+    event.currentTarget.insertAdjacentHTML("afterend", `<span>Please add a link<span>`);
+    event.currentTarget.classList.add = "red-border"
+  }
 });
 
 const copyToClipboard = str => {
