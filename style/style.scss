@@ -66,21 +66,22 @@ a {
   .nav-item a:active {
     color: black;
   }
+}
 
-  .sign-up {
-    color: white;
-    background: $cyan;
-    padding: 10px 20px;
-    border-radius: 20px;
-    border: none;
-    font-weight: bold;
-    transition: .3s all;
-  }
+.sign-up {
+  color: white;
+  background: $cyan;
+  font-size: 14px;
+  padding: 10px 22px;
+  border-radius: 20px;
+  border: none;
+  font-weight: bold;
+  transition: .3s all;
+}
 
-  .sign-up:hover {
-    background: #88E5E4;
-    cursor: pointer;
-  }
+.sign-up:hover {
+  background: #88E5E4;
+  cursor: pointer;
 }
 
 /* CTA */
@@ -175,6 +176,9 @@ a {
     }
       p {
     color: $very-dark-violet;
+    }
+    .square-btn {
+      border-radius: 6px;
     }
   }
 }

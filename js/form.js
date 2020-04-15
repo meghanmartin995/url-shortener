@@ -14,6 +14,7 @@ const shortenUrl = (link) => {
       <div class="result">
         <p>${link}</p>
         <a href="https://rel.ink/${data.hashid}">https://rel.ink/${data.hashid}</a>
+        <button class="square-btn sign-up" type="button">Copy</button>
       </div>`;
         results.insertAdjacentHTML("beforeend", result);
     });

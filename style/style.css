@@ -35,17 +35,20 @@ a {
     color: black; }
   .navigation .nav-item a:active {
     color: black; }
-  .navigation .sign-up {
-    color: white;
-    background: #2acfcf;
-    padding: 10px 20px;
-    border-radius: 20px;
-    border: none;
-    font-weight: bold;
-    transition: .3s all; }
-  .navigation .sign-up:hover {
-    background: #88E5E4;
-    cursor: pointer; }
+
+.sign-up {
+  color: white;
+  background: #2acfcf;
+  font-size: 14px;
+  padding: 10px 22px;
+  border-radius: 20px;
+  border: none;
+  font-weight: bold;
+  transition: .3s all; }
+
+.sign-up:hover {
+  background: #88E5E4;
+  cursor: pointer; }
 
 /* CTA */
 .top-content {
@@ -123,6 +126,8 @@ a {
     color: #2acfcf; }
   .results .result p {
     color: #2b272f; }
+  .results .result .square-btn {
+    border-radius: 6px; }
 
 /* Mid Section */
 .mid-section {
