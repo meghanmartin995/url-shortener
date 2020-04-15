@@ -118,21 +118,23 @@ a {
     margin-right: 14px; }
 
 /* Results */
-.results .result {
-  background: white;
-  height: 56px;
-  width: 990px;
-  border-radius: 6px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  padding: 0 30px;
-  justify-content: space-between;
-  margin-top: 18px; }
-  .results .result a {
-    color: #2acfcf; }
-  .results .result p {
-    color: #2b272f; }
+.results {
+  padding-top: 5px; }
+  .results .result {
+    background: white;
+    height: 56px;
+    width: 990px;
+    border-radius: 6px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    justify-content: space-between;
+    margin-top: 18px; }
+    .results .result a {
+      color: #2acfcf; }
+    .results .result p {
+      color: #2b272f; }
 
 .square-btn {
   border-radius: 6px; }
@@ -156,30 +158,34 @@ a {
     font-size: 30px;
     padding-bottom: 8px; }
   .mid-section p {
-    color: #9e9aa7;
-    font-size: 15px; }
+    color: #A3A1A9;
+    font-size: 15px;
+    line-height: 1.8; }
   .mid-section .statistics-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
     margin: 0 200px 0 200px;
     justify-items: center;
-    height: 500px; }
+    height: 550px; }
     .mid-section .statistics-grid img {
-      background: #2b272f;
+      background: #35323e;
       border-radius: 50%;
-      height: 36px;
-      width: 36px;
-      padding: 10px; }
+      height: 50px;
+      width: 50px;
+      padding: 16px;
+      position: relative;
+      bottom: 38px; }
     .mid-section .statistics-grid .grid-item {
       background: white;
-      padding: 10px 40px;
+      padding: 10px 36px 70px 36px;
       width: 250px;
       height: 230px;
       border-radius: 6px; }
       .mid-section .statistics-grid .grid-item h3 {
         padding-bottom: 12px;
-        font-size: 20px; }
+        font-size: 22px;
+        color: #302D37; }
       .mid-section .statistics-grid .grid-item p {
         width: 270px; }
     .mid-section .statistics-grid .records {
