@@ -5,6 +5,8 @@ const error = document.querySelector('.error')
 const input = document.querySelector('#shorten-input')
 
 
+// Fetch short URL from API
+
 const shortenUrl = (link) => {
   fetch(`https://rel.ink/api/links/?url=${link}/`, {
 
@@ -26,6 +28,8 @@ const shortenUrl = (link) => {
     });
 };
 
+// Adds short URL to page or error message
+
 form.addEventListener("submit", (event) => {
   event.preventDefault();
   const input = event.currentTarget.querySelector('#shorten-input');
@@ -40,6 +44,8 @@ form.addEventListener("submit", (event) => {
   }
 });
 
+// Copies to clipboard
+
 const copyToClipboard = str => {
   const el = document.createElement('textarea');
   el.value = str;
@@ -52,16 +58,16 @@ const copyToClipboard = str => {
   document.body.removeChild(el);
 };
 
-const addListener = () => {
-  button.addEventListener("click", (event) => {
-    const link = document.querySelector('#link').innerText;
-    copyToClipboard(link);
-    const copyButton = document.querySelector(".square-btn")
-    copyButton.innerText = `Copied!`;
-    copyButton.classList.add("purple-btn")
+button.addEventListener('click', (event) => {
+  const link = document.querySelector('#link').innerText;
+  copyToClipboard(link);
+  const copyButton = document.querySelectorAll(".square-btn")
+  copyButton.forEach((button) => {
+    button.addEventListener('click', (event) => {
+    event.currentTarget.innerText = `Copied!`;
+    event.currentTarget.classList.add("purple-btn")
   });
-};
+  })
+});
 
-
-addListener()
 
