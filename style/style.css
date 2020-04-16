@@ -93,6 +93,9 @@ a {
   cursor: pointer; }
 
 /* Form */
+.form-wrapper {
+  background: linear-gradient(180deg, #FFFFFF 29.69%, #F0F1F7 100%); }
+
 .form {
   background-image: url("../images/bg-shorten-desktop.svg");
   background-color: #2b272f;
