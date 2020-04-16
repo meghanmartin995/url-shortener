@@ -7,7 +7,7 @@
 
 ## The challenge 🤓
 
-The challenge is to build out this landing page, integrate with the [rel.ink](https://rel.ink) API and get it looking as close to the design as possible.
+The challenge is to build out this landing page using the design assets provided by Frontend Mentor, integrate with the [rel.ink](https://rel.ink) API and get it looking as close to the design as possible.
 
 Users should be able to:
 
