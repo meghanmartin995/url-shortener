@@ -169,7 +169,7 @@ a {
     line-height: 1.8; }
   .mid-section .statistics-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 40px;
     margin: 0 200px 0 200px;
     justify-items: center;
@@ -219,12 +219,15 @@ footer {
   background: #241F27;
   color: white;
   display: grid;
+  justify-items: center;
+  align-items: center;
   grid-template-columns: 230px 230px 230px 230px 230px 230px; }
   footer ul {
-    margin-top: 60px; }
+    margin-top: 20px; }
   footer .footer-logo {
     grid-column: 1;
-    color: white; }
+    color: white !important;
+    justify-self: right; }
   footer li {
     padding-bottom: 10px; }
   footer a {
