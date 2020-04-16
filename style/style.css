@@ -103,7 +103,7 @@ a {
 @media screen and (max-width: 768px) {
   .top-content {
     grid-template-columns: 700px;
-    margin: 40px 0 80px 68px;
+    margin: 40px 0 80px 40px;
     grid-gap: 40px; }
 
   .statistics-header {
@@ -167,6 +167,9 @@ a {
       width: 300px; }
     .form .shorten-btn {
       display: none; }
+
+  .mid-section p {
+    width: 380px; }
 
   .result {
     max-width: 380px; }
