@@ -99,7 +99,7 @@ a {
   background-size: cover;
   width: 1050px;
   height: 92px;
-  padding-top: 46px;
+  padding: 25px 0;
   border-radius: 10px;
   text-align: center;
   margin: 0 auto; }
