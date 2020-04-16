@@ -238,7 +238,9 @@ a {
         display: none;
       }
     }
-
+    footer {
+      height: 200px !important;
+    }
     .mid-section p {
       width: 380px;
     }
@@ -388,8 +390,14 @@ footer {
   align-items: center;
   grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
   @media screen and (max-width:768px) {
-      ul {
-        display: none;
+    ul {
+      display: none;
+    }
+    .footer-logo {
+      display: none;
+    }
+    .social-icons {
+      grid-column: 1/6 !important;
     }
   }
   ul {
@@ -398,7 +406,7 @@ footer {
   .footer-logo {
     grid-column: 1;
     color: white !important;
-    }
+  }
   li {
     padding-bottom: 10px;
   }

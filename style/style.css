@@ -168,6 +168,9 @@ a {
     .form .shorten-btn {
       display: none; }
 
+  footer {
+    height: 200px !important; }
+
   .mid-section p {
     width: 380px; }
 
@@ -283,7 +286,11 @@ footer {
   grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr)); }
   @media screen and (max-width: 768px) {
     footer ul {
-      display: none; } }
+      display: none; }
+    footer .footer-logo {
+      display: none; }
+    footer .social-icons {
+      grid-column: 1/6 !important; } }
   footer ul {
     margin-top: 20px; }
   footer .footer-logo {
